@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    margin: 0;
+    background-color: rgb(255, 254, 254);
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 0;
+}
+
+ ul li {
+    display: inline-block;
+}
+
+ ul a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 .5em;
+    margin: 1.5em;
+    color: rgb(255, 249, 249);
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav {
+    text-align: center;
+    list-style-type: none;
+    background-color: rgb(0, 0, 0);
+    margin-top: 0%;
+}
+
+.nav:hover {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 0%;
+}
+
+ul li a:hover {
+    color: rgb(10, 233, 21);
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: bold;  
+}
+
+.add {
+      color: white;
+}
+
+.reveal {
+  background-color: rgb(249, 253, 7);
+  opacity: .7;
+  box-shadow: 2px 2px 4px black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.hide {
+  display: none;
+}
+    
+.reveal:hover + .hide {
+  display: block;
+  background-color: white;
+  font-weight: bold;
+  padding: .5em;
+  margin: .3em;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 2px 2px 4px black;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  z-index: 1;
+ }
+
+ .welcome{
+    text-align: center;
+    font-size: 36px;
+    font-family: arial;
+}
+
+.facts{
+    text-align: center;
+    font-family: Montserrat, sans-serif; 
+    font-size: 18px;
+    margin: 15px auto;
+    max-width: 600px;
+}
+
+.click {
+    border-radius: 5px;
+    display: block;
+    margin: 20px;
+    width: 50%;
+    box-shadow: 2px 2px 4px black;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.dropbtn {
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: rgb(10, 233, 21);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;
+}
+
+footer {
+   position: relative;
+   padding: 10px;
+   margin-bottom: 0;
+   background-color: black;
+}
+.footer_links a{
+   position: relative;
+   padding: 10px;
+   margin-bottom: 0;
+   font-size: 18px;
+   text-decoration: none;
+   color: white;
+  margin-left: 30%;
+}
+
+.footer_links a:hover{
+   position: relative;
+   padding: 10px;
+   margin-bottom: 0;
+   font-size: 18px;
+   text-decoration: none;
+   color: rgb(202, 199, 199);
+  margin-left: 30%;
+}
+
+.linker {
+  position: absolute;
+  margin-left: 70%;
+  top: 25%;
+  font-size: 30px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.trademark {
+   color: white;
+   text-align: center;
+}
+
+.fa-youtube {
+  border-radius: 50%;
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  border-radius: 50%;
+  background: #125688;
+  color: white;
+}
+
+.fa-facebook {
+  border-radius: 50%;
+  background: #3B5998;
+  color: white;
+}
+
+.iframeDiv {
+ text-align: center;
+}
+.home {
+  position: relative;
+  top: 20px;
+  margin-top: 0;
+}
+</style>
+</head>
+<body>
+<div class="nav">
+    <ul>
+      <li><a href="Home.html"><img class="home" src="img/ProperLogo.png" width="120px" height="60px"></a></li>
+        <li><a href="Africa.html">Africa</a></li>
+        <li><a href="Antartica.html">Antartica</a></li>
+        <div class="dropdown">
+            <li><a class="dropbtn">Eurasia</a></li>
+            <div class="dropdown-content">
+              <a href="Europe.html">Europe</a>
+              <a href="Asia.html">Asia</a>
+            </div>
+          </div>
+          <li><a href="Oceania.html">Oceania</a></li>
+        <div class="dropdown">
+            <li><a class="dropbtn">Americas</a></li>
+            <div class="dropdown-content">
+              <a href="NorthAmerica.html">North America</a>
+              <a href="SouthAmerica.html">South America</a>
+            </div>
+          </div>
+    </ul>
+</div>
+
+<h1 class="welcome">Amazon</h1>
+<p class="facts">
+  The Amazon rainforest, covering much of northwestern Brazil and extending into Colombia, 
+  Peru and other South American countries, is the world’s largest tropical rainforest, famed for its biodiversity. It’s crisscrossed by thousands of rivers, including the powerful Amazon. River towns, with 19th-century architecture from rubber-boom days,
+  include Brazil’s Manaus and Belém and Peru’s Iquitos and Puerto Maldonado.
+  <br>
+  Below is a few images of the wildlif and scenery of the amazon's rainforest.
+</p>
+<img class="click" src="https://www.chimuadventures.com/blog/wp-content/uploads/2017/06/Amazon-_Brazil_shutterstock_410383780.jpg">
+<img class="click" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mata-atlantica-atlantic-forest-in-brazil-royalty-free-image-935746242-1567619461.jpg">
+<img class="click" src="https://images.firstpost.com/fpimages/1200x800/fixed/jpg/2021/05/35073192954_c14fb1e40c_k-1.jpg">
+<img class="click" src="https://www.worldatlas.com/r/w1200/upload/8c/f7/fc/shutterstock-341628218.jpg">
+<img class="click" src="https://wallpaperaccess.com/full/3979411.jpg">
+
+<div class="iframeDiv">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/kXD9CzsJUwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>   
+  <div class="footer_links">
+    <br>   
+  <a href="Home.html"> Home</a> <br>
+  <a href="Africa.html"> Africa</a> <br>
+  <a href="Antartica.html"> Antartica</a> <br>
+  <a href="Europe.html"> Europe</a> <br>
+  <a href="Oceania.html"> Oceania</a> <br>
+  <a href="NorthAmerica.html"> North America</a> <br>
+  <a href="SouthAmerica.html"> South America</a> <br>
+  <a href="Reference.html"> Reference</a><br>
+  <a href="index.html">Disclaimer</a>
+</div>
+<div class="linker">
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://www.instagram.com/?hl=en" class="fa fa-instagram"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+</div>   
+<div class="trademark">
+  <p>Liam Crowe & Conor Grace, Some rights reserved</p></div>
+</footer>
+<!-- https://stackoverflow.com/questions/35238360/change-color-of-the-text-in-navigation-bar-when-hover -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("click");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script>
+  
+</body>
+</html>
