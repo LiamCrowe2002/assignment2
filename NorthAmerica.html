@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    margin: 0;
+    background-color: rgb(255, 254, 254);
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 0;
+}
+
+ ul li {
+    display: inline-block;
+}
+
+ ul a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 .5em;
+    margin: 1.5em;
+    color: rgb(255, 249, 249);
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav {
+    text-align: center;
+    list-style-type: none;
+    background-color: rgb(0, 0, 0);
+    margin-top: 0%;
+}
+
+.nav:hover {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 0%;
+}
+
+ul li a:hover {
+    color: rgb(10, 233, 21);
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: bold;  
+}
+
+.add {
+      color: white;
+}
+
+.reveal {
+  background-color: rgb(249, 253, 7);
+  opacity: .7;
+  box-shadow: 2px 2px 4px black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.contains {
+  position: relative;
+}
+
+.show1 {
+  position: absolute;
+  z-index: 9;
+  margin: -90px 0 0 600px; 
+}
+
+.show2 {
+  position: absolute;
+  z-index: 9;
+  margin: -220px 0 0 490px;
+}
+
+.show3 {
+  position: absolute;
+  z-index: 9;
+  margin: -360px 0 0 700px;
+}
+
+.show4 {
+  position: absolute;
+  z-index: 10;
+  margin: -250px 0 0 679px;
+}
+
+.show5 {
+  position: absolute;
+  z-index: 9;
+  margin: -60px 0 0 710px;
+}
+
+.show6 {
+  position: absolute;
+  z-index: 9;
+  margin: -120px 0 0 480px;
+}
+
+.hide {
+  display: none;
+}
+    
+.reveal:hover + .hide {
+  display: block;
+  background-color: white;
+  font-weight: bold;
+  padding: .5em;
+  margin: .3em;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 2px 2px 4px black;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  z-index: 1;
+ }
+
+ .welcome{
+    text-align: center;
+    font-size: 36px;
+    font-family: arial;
+}
+
+.facts{
+    text-align: center;
+    font-family: Montserrat, sans-serif; 
+    font-size: 18px;
+    margin: 15px auto;
+    max-width: 600px;
+}
+
+.click {
+    border-radius: 5px;
+    display: block;
+    margin: 20px;
+    width: 50%;
+    box-shadow: 2px 2px 4px black;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.dropbtn {
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: rgb(10, 233, 21);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;
+}
+
+footer {
+   position: relative;
+   padding: 10px;
+   margin-bottom: 0;
+   background-color: black;
+}
+.footer_links a{
+   position: relative;
+   padding: 10px;
+   margin-bottom: 0;
+   font-size: 18px;
+   text-decoration: none;
+   color: white;
+  margin-left: 30%;
+}
+
+.footer_links a:hover{
+   position: relative;
+   padding: 10px;
+   margin-bottom: 0;
+   font-size: 18px;
+   text-decoration: none;
+   color: rgb(202, 199, 199);
+  margin-left: 30%;
+}
+
+.linker {
+  position: absolute;
+  margin-left: 70%;
+  top: 25%;
+  font-size: 30px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.trademark {
+   color: white;
+   text-align: center;
+}
+
+.fa-youtube {
+  border-radius: 50%;
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  border-radius: 50%;
+  background: #125688;
+  color: white;
+}
+
+.fa-facebook {
+  border-radius: 50%;
+  background: #3B5998;
+  color: white;
+}
+
+.iframeDiv {
+ text-align: center;
+}
+
+.home {
+  position: relative;
+  top: 20px;
+  margin-top: 0;
+}
+</style>
+</head>
+<body>
+<div class="nav">
+    <ul>
+      <li><a href="Home.html"><img class="home" src="img/ProperLogo.png" width="120px" height="60px"></a></li>
+        <li><a href="Africa.html">Africa</a></li>
+        <li><a href="Antartica.html">Antartica</a></li>
+        <div class="dropdown">
+            <li><a class="dropbtn">Eurasia</a></li>
+            <div class="dropdown-content">
+              <a href="Europe.html">Europe</a>
+              <a href="Asia.html">Asia</a>
+            </div>
+          </div>
+          <li><a href="Oceania.html">Oceania</a></li>
+        <div class="dropdown">
+            <li><a class="dropbtn">Americas</a></li>
+            <div class="dropdown-content">
+              <a href="NorthAmerica.html">North America</a>
+              <a href="SouthAmerica.html">South America</a>
+            </div>
+          </div>
+    </ul>
+</div>
+
+<h1 class="welcome">Yellowstone</h1>
+<p class="facts">
+  Yellowstone National Park sits on top of a dormant volcano and is home to more geysers and hot springs than any other place on earth.
+  This is truly a unique national park,
+  from sites like the Yellowstone Grand Canyon to wildlife like America's largest buffalo herd, grizzly bears, and wolves.
+</p>
+
+<div class="conatains">
+<img class="click" src="https://i.natgeofe.com/n/da16a274-a624-4347-857e-bcb11b72a04f/04-supervolcano-gettyimages-544699130_16x9.jpg">
+<div class= "show1">
+    <div class="reveal">
+    </div>
+    <div class="hide"><p>
+      Yellowstone is home to the largest group of mammals in the USA There is a total of 67 species.</p>
+    </div>
+ </div>
+
+ <div class= "show2">
+    <div class="reveal">
+    </div>
+    <div class="hide"><p>
+      Yellowstone is home to more than 500 active geysers (more than half the world’s geysers).</p>
+    </div>
+ </div>
+
+ <div class= "show3">
+    <div class="reveal">
+    </div>
+    <!-- -->
+    <div class="hide"><p>
+      That's among the largest volcanic eruptions known, and marks Yellowstone as a supervolcano.
+      While the volcano is still active, it's been about 70,000 years since the last lava flow.</p>
+    </div>
+ </div>
+ </div>
+
+ <h1 class="welcome">How America was re-discovered
+ </h1>
+ <p class="facts">
+  Americans get a day off work on October 10 to celebrate Columbus Day. An annual holiday that commemorates the day on October 
+  12, 1492, when the Italian explorer Christopher Columbus first set foot in the Americas, and claimed the land for Spain.</p>
+
+   <div class="conatains">
+<img class="click" src="https://live.staticflickr.com/3278/2712986388_30e3c433f2_b.jpg">
+<div class= "show4">
+  <div class="reveal">
+  </div>
+  <div class="hide"><p>
+      Largest city in the USA is New York with almost 8.4 million inhabitants is the USA's biggest city.
+      </p>
+      <img src="https://cdn.britannica.com/70/20070-050-C2E2045C/Central-Park-Manhattan-New-York-City-apartment.jpg" style="width: 300px;">
+  </div>
+</div>
+
+<div class= "show5">
+  <div class="reveal">
+  </div>
+  <div class="hide"><p>
+    The USA is the third largest country in the world. The USA are smaller than Russia or Canada, but larger than China, if all territories as well as coastal and territorial waters are included.</p>
+  </div>
+</div>
+
+<div class= "show6">
+  <div class="reveal">
+  </div>
+  <div class="hide"><p>
+    American household debt hit a record $14.6 trillion in the spring of 2021, according to the Federal Reserve. If you had to write that check it would read $14,600,000,000,000.</p>
+  </div>
+</div>
+</div>
+
+<div class="iframeDiv"><iframe width="560" height="315" src="https://www.youtube.com/embed/7OMxBlK46wY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>   
+  <div class="footer_links">
+    <br>   
+  <a href="Home.html"> Home</a> <br>
+  <a href="Africa.html"> Africa</a> <br>
+  <a href="Antartica.html"> Antartica</a> <br>
+  <a href="Europe.html"> Europe</a> <br>
+  <a href="Oceania.html"> Oceania</a> <br>
+  <a href="NorthAmerica.html"> North America</a> <br>
+  <a href="SouthAmerica.html"> South America</a> <br>
+  <a href="References.html"> Reference</a><br>
+  <a href="index.html">Disclaimer</a>
+</div>
+<div class="linker">
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-youtube"></a>
+</div>   
+<div class="trademark">
+  <p>Liam Crowe & Conor Grace, Some rights reserved</p></div>
+</footer>
+
+<!-- https://stackoverflow.com/questions/35238360/change-color-of-the-text-in-navigation-bar-when-hover -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>
