@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    margin: 0;
+    background-color: rgb(255, 254, 254);
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 0;
+}
+
+ ul li {
+    display: inline-block;
+}
+
+ ul a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 .2em;
+    margin: 1.5em;
+    color: rgb(255, 249, 249);
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav {
+    list-style-type: none;
+    background-color: rgb(0, 0, 0);
+    margin-top: 0;
+}
+
+.nav:hover {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 0;
+}
+
+ul li a:hover {
+    color: rgb(10, 233, 21);
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: bold;  
+}
+
+.add {
+      color: white;
+}
+
+.reveal {
+  background-color: rgb(249, 253, 7);
+  opacity: .7;
+  box-shadow: 2px 2px 4px black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.contains {
+  position: relative;
+}
+
+.show1 {
+  position: absolute;
+  z-index: 9;
+  margin: -90px 0 0 600px; 
+}
+
+.show2 {
+  position: absolute;
+  z-index: 9;
+  margin: -200px 0 0 450px;
+}
+
+.show3 {
+  position: absolute;
+  z-index: 9;
+  margin: -360px 0 0 700px;
+}
+
+.show4 {
+  position: absolute;
+  z-index: 9;
+  margin: -250px 0 0 679px;
+}
+
+.show5 {
+  position: absolute;
+  z-index: 9;
+  margin: -60px 0 0 710px;
+}
+
+.show6 {
+  position: absolute;
+  z-index: 9;
+  margin: -120px 0 0 450px;
+}
+
+.show7 {
+  position: absolute;
+  z-index: 9;
+  margin: -170px 0 0 539px;
+}
+
+.show8 {
+  position: absolute;
+  z-index: 9;
+  margin: -80px 0 0 590px;
+}
+
+.show9 {
+  position: absolute;
+  z-index: 9;
+  margin: -150px 0 0 625px;
+}
+
+.hide {
+  display: none;
+}
+    
+.reveal:hover + .hide {
+  display: block;
+  background-color: white;
+  font-weight: bold;
+  padding: .5em;
+  margin: .3em;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 2px 2px 4px black;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  z-index: 1;
+ }
+
+ .welcome{
+    text-align: center;
+    font-size: 36px;
+    font-family: arial;
+}
+
+.facts{
+    text-align: center;
+    font-family: Montserrat, sans-serif; 
+    font-size: 18px;
+    margin: 15px auto;
+    max-width: 600px;
+}
+
+.click {
+    border-radius: 5px;
+    display: block;
+    margin: 20px;
+    width: 50%;
+    box-shadow: 2px 2px 4px black;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.dropbtn {
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: rgb(10, 233, 21);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;
+}
+
+footer {
+   position: relative;
+   padding: 10px;
+   margin-bottom: 0;
+   background-color: black;
+}
+.footer_links a{
+   position: relative;
+   padding: 10px;
+   margin-bottom: 0;
+   font-size: 18px;
+   text-decoration: none;
+   color: white;
+  margin-left: 30%;
+}
+
+.footer_links a:hover{
+   position: relative;
+   padding: 10px;
+   margin-bottom: 0;
+   font-size: 18px;
+   text-decoration: none;
+   color: rgb(202, 199, 199);
+  margin-left: 30%;
+}
+
+.linker {
+  position: absolute;
+  margin-left: 70%;
+  top: 25%;
+  font-size: 30px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.trademark {
+   color: white;
+   text-align: center;
+}
+
+.fa-youtube {
+  border-radius: 50%;
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  border-radius: 50%;
+  background: #125688;
+  color: white;
+}
+
+.fa-facebook {
+  border-radius: 50%;
+  background: #3B5998;
+  color: white;
+}
+
+.home {
+  position: relative;
+  top: 20px;
+  margin-top: 0;
+}
+</style>
+</head>
+<body>
+<div class="nav">
+    <ul>
+      <li><a href="Home.html"><img class="home" src="img/ProperLogo.png" width="120px" height="60px"></a></li>
+        <li><a href="Africa.html">Africa</a></li>
+        <li><a href="Antartica.html">Antartica</a></li>
+        <div class="dropdown">
+            <li><a class="dropbtn">Eurasia</a></li>
+            <div class="dropdown-content">
+              <a href="Europe.html">Europe</a>
+              <a href="Asia.html">Asia</a>
+            </div>
+          </div>
+          <li><a href="Oceania.html">Oceania</a></li>
+        <div class="dropdown">
+            <li><a class="dropbtn">Americas</a></li>
+            <div class="dropdown-content">
+              <a href="NorthAmerica.html">North America</a>
+              <a href="SouthAmerica.html">South America</a>
+            </div>
+          </div>
+    </ul>
+</div>
+
+<h1 class="welcome">Antarctica</h1>
+<p class="facts">
+  Around 500 million years ago, a great supercontinent called Gondwana was formed. It was made up of several large groups of land,
+  including what would become present-day India, Africa, South America,
+  Madagascar, Australia and Antarctica. At this time, the land that would become Antarctica was sitting over the equator.
+</p>
+<div class="contains">
+<img class="click" src="https://cdn.audleytravel.com/4537/3239/79/15996225-gentoo-penguins-antarctica.jpg">
+<div class= "show1">
+    <div class="reveal">
+    </div>
+    <div class="hide"><p>
+      There are 17 species of penguin on the planet, but the eight you’ll most likely recognize live in Antarctica.
+      There is the Emperor Penguin, Adéile Penguin, Chinstrap Penguin, Macaroni Penguin,
+      Gentoo Penguin, Rockhopper Penguin, Magellanic penguin, and lastly King penguin.</p>
+    </div>
+ </div>
+
+ <div class= "show2">
+    <div class="reveal">
+    </div>
+    <div class="hide"><p>
+      Gentoo Penguins are the fastest of all penguin species! These penguins can swim at speeds of up to 36km/h! </p>
+      <img src="https://cdn.birdwatchingdaily.com/2020/11/Southern-Gentoo.jpg" style="width: 300px;">
+    </div>
+ </div>
+
+ <div class= "show3">
+    <div class="reveal">
+    </div>
+    <!-- https://thebucketlistcompany.co.uk/blog/10-facts-about-the-sahara/#:~:text=The%20Sahara%20Desert%20is%
+         20actually%20mostly%20rock%20%E2%80%93%20not%20sand!&text=In%20fact%2C%20it%20is%20just,rivers%2C%20str
+         eams%2C%20and%20oases.-->
+    <div class="hide"><p>
+      Most birds have air-filled bones to help them stay in the air. Penguins adapted with solid bones instead.
+      This helps them swim because solid bones reduce buoyancy.</p>
+    </div>
+ </div>
+</div>
+
+ <h1 class="welcome">When did penguins arrive and where did they come from.</h1>
+ <p class="facts">
+  The earliest known penguins evolved shortly after the demise of the dinosaurs in the Cretaceous-Tertiary mass extinction.
+  Roughly 66 million years ago species lived in the waters off of New Zealand.
+  Penguins are only found south from the Equator. When penguin migrated to africa, around 12 million years ago during when Drake's
+  Passage between Antarctica and the southern tip of South America opened up fully and the Antarctic Current intensified
+  which caused the glaciation of Antarctica and drove penguins that hadn't adapted to live in icy regions northward.</p>
+
+  <div class="contains">
+<img class="click" src="https://www.outsideonline.com/wp-content/uploads/migrated-images_parent/migrated-images_68/how-to-get-to-antarctica_h.jpg ">
+<div class= "show4">
+  <div class="reveal">
+  </div>
+  <div class="hide"><p>
+    Contrary to many popular holiday cartoons, you’ll never see penguins and polar bears together in the wild.
+    That’s because penguins live south of the equator while polar bears north of the equator in Arctic!
+      </p>
+  </div>
+</div>
+
+<div class= "show5">
+  <div class="reveal">
+  </div>
+  <div class="hide"><p>
+    Do polar bears eat penguins?<br>
+    Since there are no penguins in the Arctic and no polar bears on the Southern Hemisphere, penguins don’t get eaten by polar bears. 
+    Polar bears and penguins have therefore never met.</p>
+  </div>
+</div>
+
+<h1 class="welcome">Big news in Antartica</h1>
+<p class="facts">
+  A giant iceberg, more than 20 times the size of Manhattan, just split off from Antarctica's Brunt Ice Shelf. This dramatic breakup comes after a major
+  crack formed on the shelf in November 2020 and continued to grow until the 'berg finally broke off Friday morning on the 26th of February 2021</p>
+
+  <div class="contains">
+<img class="click" src="https://static.scientificamerican.com/sciam/cache/file/1BACC933-1D88-4EB8-9B73C5B296F102F5_source.jpg">
+<div class= "show7">
+  <div class="reveal">
+  </div>
+  <div class="hide"><p>
+   The human population is: 1,000 to 5,000 depending on the Season
+   </p>
+  </div>
+</div>
+
+<div class= "show8">
+  <div class="reveal">
+  </div>
+  <div class="hide"><p>
+    <h4>Lake Vostok</h4>
+    Lake Vostok, also called Subglacial Lake Vostok or Lake East, largest lake in Antarctica. Located approximately 4km
+    beneath Russia's Vostok Station on the East Antarctic Ice Sheet.</p>
+    <h4>Below is an image of how deep down Lake Vostok is.</h4>
+    <img src="https://cdn.zmescience.com/wp-content/uploads/2012/02/image-679.jpg" style="width: 300px;">
+  </div>
+</div>
+
+<div class= "show9">
+  <div class="reveal">
+  </div>
+  <div class="hide"><p>
+    Antarctica is not owned by any one nation. Antarctica is governed internationally through the Antarctic Treaty system. The Antarctic Treaty was
+    signed in 1959 by 12 countries who had scientists in and around Antarctica at the time.</p>
+    <img src="https://www.chimuadventures.com/blog/wp-content/uploads/2016/08/6a01538ee2ba41970b0163067ccf92970d-800wi.jpg" style="width: 300px;">
+  </div>
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>   
+  <div class="footer_links">
+    <br>   
+  <a href="Home.html"> Home</a> <br>
+  <a href="Africa.html"> Africa</a> <br>
+  <a href="Antartica.html"> Antartica</a> <br>
+  <a href="Europe.html"> Europe</a> <br>
+  <a href="Oceania.html"> Oceania</a> <br>
+  <a href="NorthAmerica.html"> North America</a> <br>
+  <a href="SouthAmerica.html"> South America</a> <br>
+  <a href="References.html"> Reference</a><br>
+  <a href="index.html">Disclaimer</a>
+</div>
+<div class="linker">
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-youtube"></a>
+</div>   
+<div class="trademark">
+  <p>Liam Crowe & Conor Grace, Some rights reserved</p></div>
+</footer>
+<!-- https://stackoverflow.com/questions/35238360/change-color-of-the-text-in-navigation-bar-when-hover -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>

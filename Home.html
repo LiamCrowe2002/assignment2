@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    margin: 0%;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 0;
+}
+
+ ul li {
+    display: inline-block;
+}
+
+ ul a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 .5em;
+    margin: 1.5em;
+    color: rgb(255, 249, 249);
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav {
+    text-align: center;
+    list-style-type: none;
+    background-color: rgb(0, 0, 0);
+    margin-top: 0%;
+}
+
+.nav:hover {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 0%;
+}
+
+ul li a:hover {
+    color: rgb(10, 233, 21);
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: bold;  
+}
+
+.add {
+      color: white;
+
+}
+
+.mySlides {
+    display:none;
+    width: 100%;
+    max-height: 100%;
+}
+.imagesSlider {
+    position: absolute;
+    top: 0;
+    z-index: -4;
+    width: 100%;
+    height: 100%;    
+}
+
+.dropbtn {
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: rgb(10, 233, 21);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;
+}
+
+footer {
+   position: relative;
+   padding: 10px;
+   margin-bottom: 0;
+   background-color: black;
+}
+.footer_links a{
+   position: relative;
+   padding: 10px;
+   margin-bottom: 0;
+   font-size: 18px;
+   text-decoration: none;
+   color: white;
+  margin-left: 30%;
+}
+
+.footer_links a:hover{
+   position: relative;
+   padding: 10px;
+   margin-bottom: 0;
+   font-size: 18px;
+   text-decoration: none;
+   color: rgb(202, 199, 199);
+  margin-left: 30%;
+}
+
+.linker {
+  position: absolute;
+  margin-left: 70%;
+  top: 25%;
+  font-size: 30px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.trademark {
+   color: white;
+   text-align: center;
+}
+
+.fa-youtube {
+  border-radius: 50%;
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  border-radius: 50%;
+  background: #125688;
+  color: white;
+}
+
+.fa-facebook {
+  border-radius: 50%;
+  background: #3B5998;
+  color: white;
+}
+
+.welcome{
+    text-align: center;
+    font-size: 36px;
+    font-family: arial;
+}
+
+hr {
+  width: 800px;
+}
+
+.info {
+  text-align: center;
+  margin: 0 auto;
+  width: 600px;
+  font-size: 20px;
+  font-family: arial;
+}
+
+.imgLocator {
+  text-align: center;
+}
+
+.home {
+  position: relative;
+  top: 20px;
+  margin-top: 0;
+}
+</style>
+</head>
+<body>
+    <div class="imagesSlider">
+        <img class="mySlides" src="https://wallpaperaccess.com/full/1192242.jpg">
+        <img class="mySlides" src="https://free4kwallpapers.com/uploads/originals/2015/11/25/jaguar-in-amazon-rainforest-wallpaper.jpg">
+        <img class="mySlides" src="https://images4.alphacoders.com/739/thumb-1920-739170.jpg">
+        <img class="mySlides" src="http://adwallpapers.xyz/uploads/posts/157766-polar-bear-4k-ultra-hd-wallpaper.jpg">
+        <img class="mySlides" src="https://www.roadaffair.com/wp-content/uploads/2017/10/neuschwanstein-castle-germany-shutterstock_620565122-1024x683.jpg">
+      </div>
+    
+      <div class="nav">
+        <ul>
+          <li><a href="Home.html"><img class="home" src="img/ProperLogo.png" width="120px" height="60px"></a></li>
+            <li><a href="Africa.html">Africa</a></li>
+            <li><a href="Antartica.html">Antartica</a></li>
+            <div class="dropdown">
+                <li><a class="dropbtn">Eurasia</a></li>
+                <div class="dropdown-content">
+                  <a href="Europe.html">Europe</a>
+                  <a href="Asia.html">Asia</a>
+                </div>
+              </div>
+              <li><a href="Oceania.html">Oceania</a></li>
+            <div class="dropdown">
+                <li><a class="dropbtn">Americas</a></li>
+                <div class="dropdown-content">
+                  <a href="NorthAmerica.html">North America</a>
+                  <a href="SouthAmerica.html">South America</a>
+                </div>
+              </div>
+        </ul>
+    </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>  
+
+<h3 class="welcome">Welcome</h3>
+<p class="info">Welcom Velkommen, Velcom or whatever side of the world you come from. You may be wondering what we have to offer on our
+  website. Well our soul purpose is to bring differant parts of the world togeth and appreciate what our little world
+  has to offer.</p>
+
+  <br>
+  <hr>
+  <br>
+  <p class="info">Below if you hover over a specific continent you will be brought to that page, apart from Antarctica</p>
+  <br><br>
+  <div class="imgLocator">
+  <img class="world" src="https://dbdzm869oupei.cloudfront.net/img/sticker/preview/25900.png" alt="Workplace" usemap="#workmap" width="800" height="400">
+<map name="workmap">
+  <area shape="rect" coords="320,135, 480, 350" alt="Africa" href="Africa.html">
+  <area shape="rect" coords="150,175, 280, 450" alt="South America" href="SouthAmerica.html">
+  <area shape="rect" coords="0,30, 250, 250" alt="North America" href="NorthAmerica.html">
+  <area shape="rect" coords="340,50, 470, 150" alt="Europe" href="Europe.html">
+  <area shape="rect" coords="440,40, 770, 210" alt="Asia" href="Asia.html">
+  <area shape="rect" coords="600,220, 770, 810" alt="Oceania" href="Oceania.html">
+</map>
+</div>
+<br><br>
+<hr>
+
+
+  <h3 class="welcome">A few important notes</h3>
+  <p class="info">
+   So we have a bit of user interactivity. On the images in the specific continent sections. You will see yellow icons on the images which 
+   will show a small fact on a topic related to the picture. Also the images and and facts will change once a month on the 1 of each
+   month. The facts will also change. The website is meant to give you a brief overview on a topic which is informative and educational.
+   So our website is for any ages and meant to also help people who aren't fond of geography in school.
+  </p>
+
+  <hr>
+  <h3 class="welcome">About Us</h3>
+  <p class="info">
+  Hello our name is Liam and Conor. <br>
+   We are both a group of 2nd year college students sutdying Software Development in Waterford Institute of Technology.
+   This web page is currently a project but will not be left dormant. We plan to improve the website and add more interactive feature but we 
+   hope for now our website has served its main purpose to bring fun facts about geographical locations. 
+  </p>
+<br>
+
+  <footer>   
+    <div class="footer_links">
+      <br>   
+    <a href="Home.html"> Home</a> <br>
+    <a href="Africa.html"> Africa</a> <br>
+    <a href="Antartica.html"> Antartica</a> <br>
+    <a href="Europe.html"> Europe</a> <br>
+    <a href="Oceania.html"> Oceania</a> <br>
+    <a href="NorthAmerica.html"> North America</a> <br>
+    <a href="SouthAmerica.html"> South America</a> <br>
+    <a href="References.html"> Reference</a><br>
+    <a href="index.html">Disclaimer</a>
+  </div>
+  <div class="linker">
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-youtube"></a>
+  </div>   
+  <div class="trademark">
+    <p>Liam Crowe & Conor Grace, Some rights reserved</p></div>
+  </footer>
+<!-- https://stackoverflow.com/questions/35238360/change-color-of-the-text-in-navigation-bar-when-hover -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    var myIndex = 0;
+    slider();
+    
+    function slider() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(slider, 3000); // Change image every 2 seconds
+    }
+
+    </script>
+</body>
+</html>

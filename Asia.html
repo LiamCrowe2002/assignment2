@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    margin: 0;
+    background-color: rgb(255, 254, 254);
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 0;
+}
+
+ ul li {
+    display: inline-block;
+}
+
+ ul a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 .5em;
+    margin: 1.5em;
+    color: rgb(255, 249, 249);
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav {
+    text-align: center;
+    list-style-type: none;
+    background-color: rgb(0, 0, 0);
+    margin-top: 0%;
+}
+
+.nav:hover {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 0%;
+}
+
+ul li a:hover {
+    color: rgb(10, 233, 21);
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: bold;  
+}
+
+.add {
+      color: white;
+}
+
+.reveal {
+  background-color: rgb(249, 253, 7);
+  opacity: .7;
+  box-shadow: 2px 2px 4px black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.contains {
+  position: relative;
+}
+
+.show1 {
+  position: absolute;
+  z-index: 9;
+  margin: -90px 0 0 600px; 
+}
+
+.show2 {
+  position: absolute;
+  z-index: 9;
+  margin: -200px 0 0 450px;
+}
+
+.show3 {
+  position: absolute;
+  z-index: 9;
+  margin: -360px 0 0 700px;
+}
+
+.show4 {
+  position: absolute;
+  z-index: 10;
+  margin: -250px 0 0 679px;
+}
+
+.show5 {
+  position: absolute;
+  z-index: 9;
+  margin: -60px 0 0 710px;
+}
+
+.show6 {
+  position: absolute;
+  z-index: 9;
+  margin: -120px 0 0 450px;
+}
+
+.show7 {
+  position: absolute;
+  z-index: 10;
+  margin: -170px 0 0 539px;
+}
+
+.show8 {
+  position: absolute;
+  z-index: 9;
+  margin: -80px 0 0 590px;
+}
+
+.show9 {
+  position: absolute;
+  z-index: 9;
+  margin: -150px 0 0 625px;
+}
+
+.hide {
+  display: none;
+}
+    
+.reveal:hover + .hide {
+  display: block;
+  background-color: white;
+  font-weight: bold;
+  padding: .5em;
+  margin: .3em;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 2px 2px 4px black;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  z-index: 1;
+ }
+
+ .welcome{
+    text-align: center;
+    font-size: 36px;
+    font-family: arial;
+}
+
+.facts{
+    text-align: center;
+    font-family: Montserrat, sans-serif; 
+    font-size: 18px;
+    margin: 15px auto;
+    max-width: 600px;
+}
+
+.click {
+    border-radius: 5px;
+    display: block;
+    margin: 20px;
+    width: 50%;
+    box-shadow: 2px 2px 4px black;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.dropbtn {
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: rgb(10, 233, 21);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;
+}
+footer {
+   position: relative;
+   padding: 10px;
+   margin-bottom: 0;
+   background-color: black;
+}
+.footer_links a{
+   position: relative;
+   padding: 10px;
+   margin-bottom: 0;
+   font-size: 18px;
+   text-decoration: none;
+   color: white;
+  margin-left: 30%;
+}
+
+.footer_links a:hover{
+   position: relative;
+   padding: 10px;
+   margin-bottom: 0;
+   font-size: 18px;
+   text-decoration: none;
+   color: rgb(202, 199, 199);
+  margin-left: 30%;
+}
+
+.linker {
+  position: absolute;
+  margin-left: 70%;
+  top: 25%;
+  font-size: 30px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.trademark {
+   color: white;
+   text-align: center;
+}
+
+.fa-youtube {
+  border-radius: 50%;
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  border-radius: 50%;
+  background: #125688;
+  color: white;
+}
+
+.fa-facebook {
+  border-radius: 50%;
+  background: #3B5998;
+  color: white;
+}
+.home {
+  position: relative;
+  top: 20px;
+  margin-top: 0;
+}
+</style>
+</head>
+<body>
+<div class="nav">
+    <ul>
+      <li><a href="Home.html"><img class="home" src="img/ProperLogo.png" width="120px" height="60px"></a></li>
+        <li><a href="Africa.html">Africa</a></li>
+        <li><a href="Antartica.html">Antartica</a></li>
+        <div class="dropdown">
+            <li><a class="dropbtn">Eurasia</a></li>
+            <div class="dropdown-content">
+              <a href="Europe.html">Europe</a>
+              <a href="Asia.html">Asia</a>
+            </div>
+          </div>
+          <li><a href="Oceania.html">Oceania</a></li>
+        <div class="dropdown">
+            <li><a class="dropbtn">Americas</a></li>
+            <div class="dropdown-content">
+              <a href="NorthAmerica.html">North America</a>
+              <a href="SouthAmerica.html">South America</a>
+            </div>
+          </div>
+    </ul>
+</div>
+
+<h1 class="welcome">Asia</h1>
+<p class="facts">
+  Ferdinand Magellan left Spain with five ships and 270 men in 1519,
+  Ferdinand Magellan was the first to reach Asia from the East. (1519).
+  <br>
+  The Mongol Empire existed during the 13th and 14th centuries and it
+  is recognized as being the largest land empire in history.
+  Led by Genghis Khan and his sons and grandsons, the Mongols briefly ruled most of modern-day Russia, China,
+  Korea, southeast Asia, Persia, India,
+  the Middle East and eastern Europe. They reshaped world geography, culture and history in ways that still resound today.
+</p>
+
+<div class="contains">
+<img class="click" src="https://i.pinimg.com/originals/71/b7/cb/71b7cb681a7a7b33d990fe68e2ddfb83.png">
+<div class= "show1">
+    <div class="reveal">
+    </div>
+    <div class="hide"><p>
+      There are 48 countries in Asia. More than 4.6 billion people live on the continent. Asia is currently the most populated continent.</p>
+    </div>
+ </div>
+
+ <div class= "show2">
+    <div class="reveal">
+    </div>
+    <div class="hide"><p>
+      Insects are eaten as delicacies in some Asian countries.</p>
+    </div>
+ </div>
+
+ <div class= "show3">
+    <div class="reveal">
+    </div>
+    <!-- https://www.goodhousekeeping.com/life/g35928495/asian-pacific-islander-languages/-->
+    <div class="hide"><p>
+      Asia is the largest continent in the world and home to nearly five billion people and roughly 2,300 languages.</p>
+    </div>
+ </div>
+ </div>
+
+ <h1 class="welcome"> Danyang–Kunshan Grand Bridge </h1>
+ <p class="facts">
+  The world's longest bridge is the Danyang–Kunshan Grand Bridge in China
+  The bridge, which opened in June 2011, is around 165 kilometers (102.4 miles). 
+  China constructed the Danyang–Kunshan Grand Bridge in just four years, employing 10,000 workers, at a cost of about $8.5 million,
+  according to Encyclopaedia Britannica. It crosses low rice paddies, part of the Yangtze River Delta, with just a few miles of
+  the bridge actually crossing the open water of Yangcheng Lake in Suzhou. The bridge averages about 100 feet (31 meters) off
+  the ground.</p>
+   <div class="contains">
+<img class="click" src="http://1.bp.blogspot.com/-gNxjM7mMpJI/Tnm21c_EzPI/AAAAAAAAAJs/FAwsFbeEYFw/s1600/Jiaozhou%2BBay%2BBridge-World%2527s%2BLongest%2BBridge%2BOver%2BWater%2BNow%2BOpen%2B1.jpg">
+<div class= "show4">
+  <div class="reveal">
+  </div>
+  <div class="hide"><p>
+    China now has over 130,000 kilometers of motorways(highways) nationwide, according to an official census on the country's expressways. That's enough to go around the globe more than three times. Every year since 2011, 
+    another 10,000 kilometers has been added to the network. And China now has the world's largest motorway system.
+      </p>
+  </div>
+</div>
+
+<div class= "show5">
+  <div class="reveal">
+  </div>
+  <div class="hide"><p>
+      The largest city in Asia is Tokyo. The extimated population is 13.96 million according to the 2021 census.</p>
+  </div>
+</div>
+
+<div class= "show6">
+  <div class="reveal">
+  </div>
+  <div class="hide"><p>
+      The average age of males is 71 and for females 75</p>
+      <img src="https://img.freepik.com/free-photo/happy-elderly-asian-old-man-using-smartphone-outdoor_37129-833.jpg?size=626&ext=jpg" style="width: 300px;">
+  </div>
+</div>
+</div>
+
+  <div class="contains">
+<img class="click" src="https://static01.nyt.com/images/2013/08/04/travel/04-next-span/04-next-span-superJumbo.jpg">
+<div class= "show7">
+  <div class="reveal">
+  </div>
+  <div class="hide"><p>
+    The Mongol Empire was the largest in the world.
+   </p>
+   <img src="https://mongolhistory.com/wp-content/uploads/2021/03/aUXCyxq.png" style="width: 300px;">
+  </div>
+</div>
+
+<div class= "show8">
+  <div class="reveal">
+  </div>
+  <div class="hide"><p>
+    <h4>Foods</h4>
+    Out of a total of 50,000Km of roads in Mongolia, only about 10,000Km (20%) are tarmac (asphalt) paved roads. The rest are gravel and dirt roads.
+    </p>
+    <img src="https://admin.idaoffice.org/wp-content/uploads/2017/12/Depositphotos_65823479_m-2015-1024x550.jpg" style="width: 300px;">
+  </div>
+</div>
+
+<div class= "show9">
+  <div class="reveal">
+  </div>
+  <div class="hide"><p>
+    Horses are more central to daily life in Mongolia then any where else. Mongolia is known as the land of the horse, and Mongols have
+    a reputation for being the best horsemen on Earth.</p>
+  </div>
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>   
+  <div class="footer_links">
+    <br>   
+  <a href="Home.html"> Home</a> <br>
+  <a href="Africa.html"> Africa</a> <br>
+  <a href="Antartica.html"> Antartica</a> <br>
+  <a href="Europe.html"> Europe</a> <br>
+  <a href="Oceania.html"> Oceania</a> <br>
+  <a href="NorthAmerica.html"> North America</a> <br>
+  <a href="SouthAmerica.html"> South America</a> <br>
+  <a href="References.html"> Reference</a><br>
+  <a href="index.html">Disclaimer</a>
+</div>
+<div class="linker">
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-youtube"></a>
+</div>   
+<div class="trademark">
+  <p>Liam Crowe & Conor Grace, Some rights reserved</p></div>
+</footer>
+<!-- https://stackoverflow.com/questions/35238360/change-color-of-the-text-in-navigation-bar-when-hover -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>
